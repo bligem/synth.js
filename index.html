@@ -1,0 +1,57 @@
+<html>
+
+<body style="background-color: grey">
+    <div style="float: left; margin-right: 20px;">
+        <div style="float: left;">
+            <p>OSC</p>
+            <input type="radio" id="sin-wave" name="waveform" value="sine" checked>
+            <label for="sin-wave">Sin Wave</label><br>
+            <input type="radio" id="square-wave" name="waveform" value="square">
+            <label for="square-wave">Square Wave</label><br>
+            <input type="radio" id="triangle-wave" name="waveform" value="triangle">
+            <label for="triangle-wave">Triangle Wave</label><br>
+            <input type="radio" id="sawtooth-wave" name="waveform" value="sawtooth">
+            <label for="sawtooth-wave">Sawtooth Wave</label><br>
+        </div>
+        <div style="float: left; margin-left: 20px;">
+            <p>FM OSC</p>
+            <input type="radio" id="sin-wave-fm" name="FMwaveform" value="sine" checked>
+            <label for="sin-wave-fm">Sin Wave</label><br>
+            <input type="radio" id="square-wave-fm" name="FMwaveform" value="square">
+            <label for="square-wave-fm">Square Wave</label><br>
+            <input type="radio" id="triangle-wave-fm" name="FMwaveform" value="triangle">
+            <label for="triangle-wave-fm">Triangle Wave</label><br>
+            <input type="radio" id="sawtooth-wave-fm" name="FMwaveform" value="sawtooth">
+            <label for="sawtooth-wave-fm">Sawtooth Wave</label><br>
+        </div>
+        <br>
+        <div style="float:left">
+        <label for="volume-control">Master Volume</label><br>
+        <input type="range" id="volume-control" min="0" max="1" step="0.01" value="0.1"><br>
+        <label for="volume-control">Attack Time</label><br>
+        <input type="range" id="attack-control" min="0" max="0.5" step="0.05" value="0.3"><br>
+        <label for="sustain-control">Sustain</label><br>
+        <input type="range" id="sustain-control" value="1" min="0.2" max="1" step="0.05"><br>
+        <label for="volume-control">Release Time</label><br>
+        <input type="range" id="release-control" min="0" max="0.5" step="0.05" value="0.3"><br><br>
+    </div>
+    <div style="float: left; margin-left: 20px;">
+        <label for="mod-frequency">FM Frequency</label><br>
+        <input type="number" id="mod-frequency" value="100"><br>
+        <label for="mod-depth">FM Depth</label><br>
+        <input type="number" id="mod-depth" value="50"><br><br>
+        <label for="am-frequency">AM Frequency</label><br>
+        <input type="number" id="am-frequency" value="100"><br>
+        <label for="am-depth">AM Depth</label><br>
+        <input type="number" id="am-depth" value="0"><br>
+    </div>
+    </div>
+    <div style="float: left;">
+        <canvas style="float: right; clear: both;" id="visualizer" width="300" height="100"></canvas>
+        <canvas style="float: right; clear: both; margin-top: 10px;" id="analyzer" width="300" height="100"></canvas>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
